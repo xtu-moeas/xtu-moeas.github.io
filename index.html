@@ -154,13 +154,13 @@ Based on the rankings of participating algorithms on the MIGD and MHV metrics, w
 <br/><br/>
 <div style="text-align:center;">
   <span style="font-size: 18px;">
-    \textit{SR_{RD P}}=\textit{\sum\limits^{40}_{i=1}{\textit{Rank_{MIGD}}}}+\textit{\sum\limits^{40}_{i=1}{\textit{Rank_{MHV}}}}
+    \( SR_{RD P}=\sum\limits^{40}_{i=1}{{Rank_{MIGD}}+\sum\limits^{40}_{i=1}{Rank_{MHV}}} \)
   </span>
 </div>
 <br/>
 <div style="text-align:center;">
   <span style="font-size: 18px;">
-    \textit{SR_{RDC}}=\textit{\sum\limits^{36}_{i=1}{\textit{Rank_{MIGD}}}}+\textit{\sum\limits^{36}_{i=1}{\textit{Rank_{MHV}}}}
+    \( SR_{RDC}=\sum\limits^{36}_{i=1}{Rank_{MIGD}}+\sum\limits^{36}_{i=1}{Rank_{MHV}} \)
   </span>
 </div>
 <br/>
@@ -169,11 +169,11 @@ where \( Rank \) is the ranking obtained by calculating the mean and standard de
 <br/><br/>
 <div style="text-align:center;">
   <span style="font-size: 18px;">
-    Score=(1−\textit{\frac{SR−\textit{SR_{min}}}{\textit{SR_{max}}−\textit{SR_{min}}}})×100
+    Score=(1−\frac{SR−SR_{min}}{SR_{max}−SR_{min}})×100
   </span>
 </div>
 <br/><br/>
-It is worth noting that when \( SR=\textit{SR_{max}} \), score equals 0.
+It is worth noting that when \( SR=SR_{max} \), score equals 0.
 <br/><br/>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
