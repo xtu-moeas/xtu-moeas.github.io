@@ -107,14 +107,14 @@ The organizers have verified the results of all participants. The code will be u
 <b>Remarks:</b>
 <br/>
 Track 1: <br/>
-Yuqi Lei: <a href="mailto:leiyuqi0211@163.com">leiyuqi0211@163.com</a><br/>
-Qinqin Fan: <a href="mailto:qqfan@shmtu.edu.cn">qqfan@shmtu.edu.cn</a><br/>
-Ru Lei: <a href="mailto:leir@mail.nwpu.edu.cn">leir@mail.nwpu.edu.cn</a><br/>
+Chi Wang: <a href="mailto:7253115023@stu.jiangnan.edu.cn">7253115023@stu.jiangnan.edu.cn</a><br/>
+Youhao Xu: <a href="e125221142@stu.ahu.edu.cn">e125221142@stu.ahu.edu.cn</a><br/>
+Mingyin Zou: <a href="mailto:zoumingyin20@alumni.nudt.edu.cn">zoumingyin20@alumni.nudt.edu.cn</a><br/>
 <br/>
 Track 2: <br/>
-Zhanglu Hou: <a href="mailto:zhanglhou@163.com">zhanglhou@163.com</a><br/>
-Dezheng Zhang: <a href="mailto:zhangdezheng1998@163.com">zhangdezheng1998@163.com</a><br/>
+Youhao Xu: <a href="mailto:e125221142@stu.ahu.edu.cn">e125221142@stu.ahu.edu.cn</a><br/>
 Jiaqi Liu: <a href="mailto:871781134@qq.com">871781134@qq.com</a><br/>
+Quan Gong: <a href="2184242582@qq.com">2184242582@qq.com</a><br/>
 <br/>
 
 <b>Introduction</b>
@@ -150,33 +150,32 @@ J. Zou, X. Yu, Z. Hou, H. Bai, X. Zhao, Y. Hu, S. Jiang and S. Yang " Benchmark 
 
 <b>Ranking calculation rules:</b>
 <br/><br/>
-Since the MHV metric's reference point is disregarded during performance evaluation, algorithm scoring relies solely on their MIGD rankings. The final performance score is determined by combining two ranking components (Synthesis Ranking, SR):
+Based on the rankings of participating algorithms on the MIGD and MHV metrics, we calculate a final score to evaluate algorithm performance. This final performance score is derived from two ranking components, known as the Synthesis Ranking (SR):
 <br/><br/>
 <div style="text-align:center;">
   <span style="font-size: 18px;">
-    \( SR = \sum_{i=1}^{40} Rank_{MIGD} + \sum_{i=1}^{40} Rank_{mean(std.)} \)
+    \textit{SR_{RD P}}=\textit{\sum\limits^{40}_{i=1}{\textit{Rank_{MIGD}}}}+\textit{\sum\limits^{40}_{i=1}{\textit{Rank_{MHV}}}}
   </span>
 </div>
 <br/>
-<ul>
-  <li><b>MIGD Ranks:</b> Rankings based on the MIGD metric across all experiments.</li>
-  <li><b>Mean(Std) Ranks:</b> Rankings based on the standard deviation values calculated for each algorithm using the given test functions and performance indicators.</li>
-</ul>
-Once the SR values are computed for all algorithms, the final score is calculated as:
+<div style="text-align:center;">
+  <span style="font-size: 18px;">
+    \textit{SR_{RDC}}=\textit{\sum\limits^{36}_{i=1}{\textit{Rank_{MIGD}}}}+\textit{\sum\limits^{36}_{i=1}{\textit{Rank_{MHV}}}}
+  </span>
+</div>
+<br/>
+<br/>
+where \( Rank \) is the ranking obtained by calculating the mean and standard deviation of the algorithm results based on the given test problem and evaluation metrics. Once the SR values are computed for all algorithms, the final score is calculated as:
 <br/><br/>
 <div style="text-align:center;">
   <span style="font-size: 18px;">
-    \( Score = \left(1 - \frac{SR - SR_{min}}{SR_{max} - SR_{min}}\right) \times 100 \)
+    Score=(1−\textit{\frac{SR−\textit{SR_{min}}}{\textit{SR_{max}}−\textit{SR_{min}}}})×100
   </span>
 </div>
-<br/>
-When \( SR = SR_{max} \), score equals 0. It is worth noting that although the authors submitted MHV metric values, we did not include the results of the MHV metrics for scoring due to the lack of a harmonized reference point and in order to make comparisons as fair as possible.
 <br/><br/>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+It is worth noting that when \( SR=\textit{SR_{max}} \), score equals 0.
 <br/><br/>
-<br/><br/>
-  
+
 <b>Important dates</b>
 
 Result submission deadline: <strong>June 15, 2026</strong><br/><br/>
